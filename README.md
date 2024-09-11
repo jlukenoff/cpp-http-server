@@ -10,6 +10,13 @@ Implementation of a simple HTTP server in C++
 
 ## Quick start
 
+### Build and run with docker
+```bash
+docker build -t cpp-http-server .
+docker run --rm -it -p 8080:8080 cpp-http-server ./SimpleHttpServer '127.0.0.1'
+```
+
+### Build from source
 ```bash
 mkdir build && cd build
 cmake ..
